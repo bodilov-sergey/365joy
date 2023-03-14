@@ -1,0 +1,58 @@
+.logo {
+    width: 10em;
+    height: 9.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & span {
+        position: absolute;
+        top: 0;
+        left: 8.5%;
+        border: 0.2em solid;
+        opacity: 0.7;
+        &:nth-child(1) {
+            width: 8.5em;
+            height: 8.5em;
+            margin-left: -0.5em;
+            border-color: #00e1ff;
+            border-radius: 50%;
+        }
+
+        &:nth-child(3) {
+            width: 9.2em;
+            height: 9.2em;
+            margin-left: -0.8em;
+            border-color: #ffa600;
+            border-radius: 7em 3em 5em 5em / 5em 3em 7em 5em;
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            width: 9em;
+            height: 9em;
+            border-color: #89d300;
+            transform: rotate(-20deg);
+            border-radius: 5.5em 4.5em 5.5em 4.5em / 5.5em 4em 6em 4.5em;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 3.7em;
+        line-height: 1.1;
+        transform: scaleY(1.2);
+        color: #3f3f3f;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 1.2em;
+        letter-spacing: 0.5em;
+        margin-left: 0.5em;
+        line-height: 1;
+        color: #ade04d;
+    }
+}

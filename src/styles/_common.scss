@@ -1,0 +1,141 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    background: url("/assets/images/fon.jpg");
+}
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+p {
+    margin: 0;
+}
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+input[type="radio"] {
+    display: none;
+}
+input {
+    outline: none;
+}
+.backdrop {
+    &.__opened {
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.7;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    // text-align: inherit;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 8vw;
+    color: #555;
+    text-align: center;
+    margin-top: 8.7vw;
+    margin-bottom: 5.22vw;
+
+    @media (min-width: 576px) {
+        font-size: 46px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+.b-green {
+    background: #d6efa6;
+}
+.b-orange {
+    background: #ffe0a6;
+}
+.b-blue {
+    background: #d2f9ff;
+}
+.c-green {
+    color: #ade04d;
+}
+.c-orange {
+    color: #ffc14d;
+}
+.c-blue {
+    color: #4deaff;
+}
+
+.style-box {
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        background: #ffe0a6;
+        box-shadow: 0 0 1em #00000020;
+        border-radius: 15px;
+        padding: 0 5px;
+        top: 0;
+        left: -5px;
+        bottom: 0;
+        z-index: -2;
+        right: -5px;
+        transform: rotate(3deg);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 0 1em #00000020;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+.anchor {
+    position: relative;
+    top: -60px;
+}
+
+hr {
+    background: none;
+    opacity: 1;
+}
+.container-fluid {
+    max-width: 1440px;
+    @media (min-width: 416px) {
+        padding: 0 3%;
+    }
+    @media (min-width: 1440px) {
+        padding: 0 43.1875px;
+    }
+}

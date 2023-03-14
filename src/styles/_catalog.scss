@@ -1,0 +1,17 @@
+.catalog {
+    overflow: hidden;
+    padding-bottom: 30px;
+    margin-bottom: -20px;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 0 auto -5%;
+
+        @media (min-width: 646px) {
+            max-width: 100%;
+            margin-bottom: -3%;
+        }
+    }
+}
